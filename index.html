@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tessen Sports - Canlı Yayın</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- 
+========================================================================================
+🚨 KANAL EKLEME BÖLÜMÜ 🚨
+KANAL ADI | KATEGORİ | KALİTE | YAYIN LİNKİ | LOGO LİNKİ (OPSİYONEL)
+======================================================================================== 
+-->
+<script id="kolay-kanal-listesi" type="text/plain">
+BEIN SPORTS 1 | Spor | HD | https://api.hitnova.net/s/zirve/mono.m3u8 | https://i.imgur.com/MBdcQG2.png
+BEIN SPORTS 2 | Spor | HD | https://api.hitnova.net/s/b2/mono.m3u8 | https://i.imgur.com/MBdcQG2.png
+BEIN SPORTS 3 | Spor | HD | https://api.hitnova.net/s/b3/mono.m3u8 | https://i.imgur.com/MBdcQG2.png
+BEIN SPORTS 4 | Spor | HD | https://api.hitnova.net/s/b4/mono.m3u8 | https://i.imgur.com/MBdcQG2.png
+BEIN SPORTS 5 | Spor | HD | https://api.hitnova.net/s/b5/mono.m3u8 | https://i.imgur.com/MBdcQG2.png
+BEIN SPORTS MAX 1 | Spor | HD | https://api.hitnova.net/s/bm1/mono.m3u8 | https://i.imgur.com/MBdcQG2.png
+BEIN SPORTS MAX 2 | Spor | HD | https://api.hitnova.net/s/bm2/mono.m3u8 | https://i.imgur.com/MBdcQG2.png
+S SPORT | Spor | HD | https://api.hitnova.net/s/ss/mono.m3u8 | https://i.imgur.com/cAOP1h6.png
+S SPORT 2 | Spor | HD | https://api.hitnova.net/ss2/zirve/mono.m3u8 | https://i.imgur.com/cAOP1h6.png
+SPOR SMART | Spor | HD | https://api.hitnova.net/ss2/smarts/mono.m3u8 | https://i.imgur.com/qZp2u66.png
+SPOR SMART 2 | Spor | HD | https://api.hitnova.net/ss2/sms2/mono.m3u8 | https://i.imgur.com/qZp2u66.png
+TİVİBU SPOR 1 | Spor | HD | https://api.hitnova.net/s/t1/mono.m3u8 | https://i.imgur.com/3TcCqlI.png
+TİVİBU SPOR 2 | Spor | HD | https://api.hitnova.net/s/t2/mono.m3u8 | https://i.imgur.com/3TcCqlI.png
+TİVİBU SPOR 3 | Spor | HD | https://api.hitnova.net/s/t3/mono.m3u8 | https://i.imgur.com/3TcCqlI.png
+TİVİBU SPOR 4 | Spor | HD | https://api.hitnova.net/s/t4/mono.m3u8 | https://i.imgur.com/3TcCqlI.png
+EUROSPORT 1 | Spor | HD | https://api.hitnova.net/s/eu1/mono.m3u8 | https://i.imgur.com/zZUdP1T.png
+EUROSPORT 2 | Spor | HD | https://api.hitnova.net/s/eu2/mono.m3u8 | https://i.imgur.com/zZUdP1T.png
+TABİİ SPOR | Tabii | HD | https://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/eQRs7kW.png
+TABİİ SPOR 1 | Tabii | HD | https://Pz4qT7nW1mR9sH2vL5xK8jG3y.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/eQRs7kW.png
+TABİİ SPOR 2 | Tabii | HD | https://mr8bv4kl1nq7sh9tw2xp5zj6g.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/eQRs7kW.png
+TABİİ SPOR 3 | Tabii | HD | https://mR4vL7nQ2sH9tW5xP1zK3gJ8b.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/eQRs7kW.png
+TABİİ SPOR 4 | Tabii | HD | https://sh7tq2nw5mr1vl9xp4zk3gj8k.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/eQRs7kW.png
+TABİİ SPOR 5 | Tabii | HD | https://vl2nq8sh4tw1mr7xp5zk9gj3y.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/eQRs7kW.png
+TABİİ SPOR 6 | Tabii | HD | https://nw5mr1vl9xp4zk2sh7tq3gj6b.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/eQRs7kW.png
+TABİİ SPOR 7 | Tabii | HD | https://pz2rt7nw1mr9sh4vl6xk3gj5b.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/eQRs7kW.png
+A SPOR | Spor | HD | https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8 | https://i.imgur.com/jd8jaag.png 
+TRT SPOR | Spor | HD | https://tv-trtspor1.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/YYWZc2Y.png
+TRT SPOR YILDIZ | Spor | HD | https://tv-trtspor2.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/dzs334I.png
+TRT 1 | Ulusal | HD | https://tv-trt1.medya.trt.com.tr/master.m3u8 | https://i.imgur.com/GdJcYHI.png
+ATV | Ulusal | HD | https://api.hitnova.net/s/atv/mono.m3u8 | https://i.imgur.com/z4epgGN.png
+TV8 | Ulusal | HD | https://api.hitnova.net/s/tv8/mono.m3u8 | https://i.imgur.com/bhp3Al4.png
+TV8.5 | Ulusal | HD | https://api.hitnova.net/s/tv85/mono.m3u8 | https://i.imgur.com/UN5IcU5.png
+EXXEN SPOR 1 | Ulusal | HD | https://hlsmm-ffff.hf.space/proxy/m3u?url=http://185.66.91.40:8080/live/bA0mEmM9/wx5MsK6/230.m3u8
+</script>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon" style="background:none; padding:0; overflow:hidden;">
+      <img src="https://i.imgur.com/cNn5rIB.png" alt="Tessen Logo" style="width:100%; height:100%; object-fit:contain;"/>
+    </div>
+    <div>
+      <span class="logo-text-panzer">Tessen</span><span class="logo-text-sports"> Sports</span>
+    </div>
+  </div>
+  <div class="header-actions">
+    <button class="theme-btn" onclick="toggleTheme()" id="themeBtn" aria-label="Tema Değiştir"></button>
+  </div>
+</header>
+
+<div class="container">
+  <div class="player-section">
+    <div class="player-wrapper">
+      <div class="placeholder" id="placeholder">
+        <div class="placeholder-icon">📺</div>
+        <p>İzlemek istediğiniz kanalı listeden seçin.</p>
+      </div>
+      <div id="videoContainer"></div>
+    </div>
+    <div class="now-playing" id="nowPlaying">
+      <div class="np-badge"><div class="np-dot"></div> CANLI</div>
+      <div>
+        <div class="np-title" id="npTitle">Kanal Adı</div>
+        <div class="np-sub" id="npSub">Kategori • Kalite</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="list-section">
+    <div class="list-header">
+      <div class="list-title">
+        <span>Canlı Kanallar</span>
+        <span class="channel-count" id="channelCount">0</span>
+      </div>
+      <div class="search-row">
+        <input type="text" class="search-box" id="searchInput" placeholder="Kanal veya Kategori ara..." onkeyup="renderChannels()">
+      </div>
+      <div class="categories" id="categoryList"></div>
+    </div>
+    <div class="channel-list" id="channelList"></div>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.3.5/hls.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dashjs/4.7.4/dash.all.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
